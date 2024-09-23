@@ -5,22 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Donate Bangladesh</title>
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
 </head>
 
-<body class="bg-[#F9F7F3]">
-    <header>
+<body class="bg-[#F9F7F3] lexend-font">
+    <header class="flex flex-row justify-center items-center">
         <nav>
-            <a href="">Home</a>
-            <ul>
-                <li></li>
-                <li></li>
+            <a href="">Blog</a>
+            <ul class=" w-fit flex flex-row justify-center items-center gap-2">
+                <img src="./assets/logo.png" alt="">
+                <li>Donate Bangladesh</li>
             </ul>
         </nav>
-        <button class="btn">Donation</button>
-        <button>History</button>
     </header>
     <main class="bg-white px-36 py-20">
+        <div class="flex flex-row justify-center items-center gap-2 mb-6">
+            <button class="border-2 bg-white hover:bg-lime-300 px-4 py-2 font-bold text-xl rounded-lg">Donation</button>
+
+            <button class="border-2 bg-white hover:bg-lime-300 px-4 py-2 font-bold text-xl rounded-lg">History</button>
+        </div>
         <div class="card-1 flex flex-row border-2 rounded-xl">
             <div class="w-2/4 m-4">
                 <img src="./assets/noakhali.png" alt="">
@@ -96,7 +107,7 @@
         </div>
     </main>
     <footer>
-        
+
     </footer>
 
 </body>
