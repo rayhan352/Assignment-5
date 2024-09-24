@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8 ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
@@ -17,21 +18,27 @@
 </head>
 
 <body class="bg-[#F9F7F3] lexend-font">
-    <header class="flex flex-row justify-center items-center">
-        <nav>
-            <a href="">Blog</a>
-            <ul class=" w-fit flex flex-row justify-center items-center gap-2">
+    <header>
+        <div class="flex flex-row justify-center items-center">
+            <div class="text-xl font-bold items-start justify-start"> <a href="./blog.html">Blog</a></div>
+            <div class=" w-fit flex flex-row justify-center items-center gap-2">
                 <img src="./assets/logo.png" alt="">
-                <li>Donate Bangladesh</li>
-            </ul>
-        </nav>
-    </header>
-    <main class="bg-white px-20 py-16">
-        <div class="flex flex-row justify-center items-center gap-2 mb-6">
-            <button class="border-2 bg-white hover:bg-lime-300 px-4 py-2 font-bold text-xl rounded-lg">Donation</button>
+                <button class="text-xl font-bold">Donate Bangladesh</button>
+            </div>
+            <div class="bg-slate-100 rounded-lg border px-4 py-1 w-fit flex flex-row justify-center items-center
+                gap-2">
+                <img src="./assets/coin.png" alt="">
+                <button class="text-xl font-bold"><span id="">5500</span> BDT</button>
+            </div>
+        </div>
 
+        <div class="bg-white flex flex-row justify-center items-center gap-2 mb-6">
+            <button class="border-2 bg-white hover:bg-lime-300 px-4 py-2 font-bold text-xl rounded-lg">Donation</button>
             <button class="border-2 bg-white hover:bg-lime-300 px-4 py-2 font-bold text-xl rounded-lg">History</button>
         </div>
+    </header>
+    <main class="bg-white px-28 md:-10 py-16">
+
         <div class="flex md:flex-row flex-col md:w-full border-2 rounded-xl">
             <div class="w-fit md:w-2/4 m-4">
                 <img src="./assets/noakhali.png" alt="">
