@@ -1,36 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <title>Blog</title>
+    <style>
+        .lexend-font {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Importent FAQ ?</h1>
-    <div>
-        <div>
-            <h2> What is Document Object Model (DOM) ? </h2>
-            <p></p>
+<body class="lexend-font">
+    <header class="backdrop-blur-lg">
+        <!-- nav -->
+        <div class="fixed z-50 w-full   top-0 my-0 py-0 mx-0 px-0">
+            <div class="navbar grid grid-cols-3 w-full lg:flex bg-[#F9F7F3] ">
+                <div class="navbar-start">
+                    <a class="text-xl font-bold bg-[#B4F461] px-4 py-3 rounded-lg" href="index.html">Blog</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <ul class=" ">
+                        <li><a
+                                class="text-xl font-semibold flex flex-row justify-center items-center text-center">
+                                <img src="./assets/logo.png" alt="">Donate Bangladesh
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end justify-end ">
+                    <a class="flex flex-row"><img src="./assets/coin.png" alt="">5050 BDT</a>
+                </div>
+            </div>
+            <!-- button -->
+            <div class=" justify-center w-full hidden">
+                <div>
+                    <button
+                        class="rounded-lg  bg-[#B4F461] font-semibold text-xl my-4 mx-4  px-4 py-4 ">Donation</button>
+                </div>
+                <div>
+                    <button
+                        class="rounded-lg  bg-[#1111114D] font-semibold text-xl my-4 mx-4 px-4 py-4 ">History</button>
+                </div>
+            </div>
         </div>
 
+    </header>
+    <main class="z-10 px-36 py-32">
+        <h1 class="text-3xl font-bold my-10">Important FAQ ?</h1>
         <div>
-            <h2>How do you select on element from the DOM ?</h2>
-            <p></p>
-        </div>
+            <div class="collapse collapse-arrow bg-slate-50 border-2 px-4 py-2">
+                 <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl  font-bold"> What is Document Object Model (DOM) ?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. </p>
+                </div>
+            </div>
 
-        <div>
-            <h2> What is event delegotion in the context of the DOM , and why is it usefull? </h2>
-            <p></p>
-        </div>
+            <div class="collapse collapse-arrow bg-slate-50 border-2 my-4 px-4 py-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-bold">How do you select on element from the DOM ?</div>
+                <div class="collapse-content">
+                    <p class="text-base">HTML , CSS , javascript.</p>
+                </div>
+            </div>
 
-        <div>
-            <h2>How do you manipulate on element's atributes and styles using the DOM?</h2>
-            <p></p>
+            <div class="collapse collapse-arrow bg-slate-50 border-2 px-4 py-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-bold">What is event delegotion in the context of the DOM , and  why is it usefull?
+                </div>
+                <div class="collapse-content">
+                    <p>HTML is a HyperText Markup language. And Tailwind & DaisyUI are Css framework. </p>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-slate-50 border-2 my-4 px-4 py-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-bold">How do you manipulate on element's atributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>Yes , I know. javascript is a programming language And DOM is Document Object Model.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
+    </main>
 </body>
 
 </html>

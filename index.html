@@ -18,26 +18,40 @@
 </head>
 
 <body class="bg-[#F9F7F3] lexend-font">
-    <header>
-        <div class="flex flex-row justify-center items-center">
-            <div class="text-xl font-bold items-start justify-start"> <a href="./blog.html">Blog</a></div>
-            <div class=" w-fit flex flex-row justify-center items-center gap-2">
-                <img src="./assets/logo.png" alt="">
-                <button class="text-xl font-bold">Donate Bangladesh</button>
+    <header class="mb-40 fixed top-0 right-0 left-0 backdrop-blur-md bg-white/30 ">
+        <!-- nav -->
+        <div class=" z-50 w-full  ">
+            <div class="navbar grid grid-cols-3 w-full lg:flex bg-[#F9F7F3] ">
+                <div class="navbar-start">
+                    <a class="text-xl font-bold bg-lime-300 px-4 py-3 rounded-lg" href="blog.html">Blog</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <ul class=" ">
+                        <li><a class="text-xl font-semibold flex flex-row justify-center items-center text-center">
+                                <img src="./assets/logo.png" alt="">Donate Bangladesh
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end justify-end ">
+                    <a class="flex flex-row"><img src="./assets/coin.png" alt="">5050 BDT</a>
+                </div>
             </div>
-            <div class="bg-slate-100 rounded-lg border px-4 py-1 w-fit flex flex-row justify-center items-center
-                gap-2">
-                <img src="./assets/coin.png" alt="">
-                <button class="text-xl font-bold"><span id="">5500</span> BDT</button>
+            <!-- button -->
+            <div class="flex flex-row justify-center items-center w-full">
+                <div>
+                    <button
+                        class="rounded-lg border-2 bg-white hover:bg-lime-300 font-bold text-xl my-4 mx-4  px-4 py-4 ">Donation</button>
+                </div>
+                <div>
+                    <button
+                        class="rounded-lg border-2 bg-white hover:bg-lime-300 font-bold text-xl my-4 mx-4 px-4 py-4 ">History</button>
+                </div>
             </div>
-        </div>
-
-        <div class="bg-white flex flex-row justify-center items-center gap-2 mb-6">
-            <button class="border-2 bg-white hover:bg-lime-300 px-4 py-2 font-bold text-xl rounded-lg">Donation</button>
-            <button class="border-2 bg-white hover:bg-lime-300 px-4 py-2 font-bold text-xl rounded-lg">History</button>
         </div>
     </header>
-    <main class="bg-white px-28 md:-10 py-16">
+    
+    <main class="bg-white mx-36 pt-32 my-20">
 
         <div class="flex md:flex-row flex-col md:w-full border-2 rounded-xl">
             <div class="w-fit md:w-2/4 m-4">
